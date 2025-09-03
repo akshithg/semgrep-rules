@@ -7,8 +7,16 @@ rules:
     severity: WARNING
     metadata:
       category: security
+      cwe: CWE-697
       technology: [swift, ios]
+      subcategory: [audit]
       confidence: HIGH
+      likelihood: HIGH
+      impact: MEDIUM
+      references:
+        - https://developer.apple.com/documentation/foundation/url/host(percentencoded:)
+        - https://developer.apple.com/documentation/foundation/nsstring/hassuffix(_:)
+        - https://pentesterlab.com/blog/rust-cors-vulnerabilities
     pattern-either:
       # Pattern 1: Any .host property followed by hasSuffix
       - patterns:
