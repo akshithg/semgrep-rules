@@ -218,6 +218,11 @@ $ semgrep --config /path/to/semgrep-rules/hanging-goroutine.yml -o leaks.txt'
 | [wget-no-check-certificate](generic/wget-no-check-certificate.yaml) | [🛝🔗](https://semgrep.dev/playground/r/trailofbits.generic.wget-no-check-certificate.wget-no-check-certificate) | 🟥 | 🌗 |  |
 | [wget-unencrypted-url](generic/wget-unencrypted-url.yaml) | [🛝🔗](https://semgrep.dev/playground/r/trailofbits.generic.wget-unencrypted-url.wget-unencrypted-url) | 🟥 | 🌗 |  |
 
+### swift
+
+| ID | Playground | Impact | Confidence | Description |
+| -- | :--------: | :----: | :--------: | ----------- |
+| [insecure-url-host-hassuffix-check](swift/insecure-url-host-hassuffix-check.yaml) | [🛝🔗](https://semgrep.dev/playground/r/trailofbits.swift.insecure-url-host-hassuffix-check.insecure-url-host-hassuffix-check) | 🌫️ | 🌘 |  |
 
 ## Contributing
 
