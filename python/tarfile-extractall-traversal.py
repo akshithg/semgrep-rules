@@ -1,6 +1,7 @@
 import argparse
 import tarfile
 
+
 def get_parser():
     parser = argparse.ArgumentParser(description='Process zip files.')
     parser.add_argument('--path', type=str, required=True,
@@ -48,7 +49,7 @@ def extract_6(args, tarobj):
     tf.extractall(members=safu_members(), numeric_owner=True, path=save_path)
 
 def extract_7(args, tarobj):
-    # todoruleid: tarfile-extractall-traversal
+    # ruleid: tarfile-extractall-traversal
     tf = tarfile.open(mode='r', fileobj=None)
     tf.extractall(members=None, numeric_owner=True, path=save_path)
 
